@@ -35,7 +35,8 @@ Object.prototype.length = function () {
 // Getting range of a number [From 0]
 Number.prototype.range = function () {
     var list;
-    list = Array.apply(null, Array(parseInt(this.toString()))).map(function (_, i) {
+    var n = parseInt(this.toString()) + 1;
+    list = Array.apply(null, Array(n)).map(function (_, i) {
         return i;
     });
     return list;
