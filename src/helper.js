@@ -20,17 +20,6 @@
  * Date: 2017-09-12
  */
 
-// Count objects item.
-function countItems(object) {
-    var length = 0;
-    for (var key in object) {
-        if (object.hasOwnProperty(key)) {
-            ++length;
-        }
-    }
-    return length;
-};
-
 // Get length of an object.
 Object.prototype.length = function () {
     var length = 0;
