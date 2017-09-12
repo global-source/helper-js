@@ -21,7 +21,7 @@
  */
 
 // Get length of an object.
-Object.prototype.length = function () {
+Object.prototype.countMe = function () {
     var length = 0;
     var object = this;
     for (var key in object) {
