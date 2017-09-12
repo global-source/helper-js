@@ -31,6 +31,18 @@ function countItems(object) {
     return length;
 };
 
+// Get length of an object.
+Object.prototype.length = function () {
+    var length = 0;
+    var object = this;
+    for (var key in object) {
+        if (object.hasOwnProperty(key)) {
+            ++length;
+        }
+    }
+    return length;
+};
+
 // Getting range of a number [From 0]
 Number.prototype.range = function () {
     var list;
